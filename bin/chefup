@@ -1,0 +1,4 @@
+#!/bin/bash
+
+CHEFDIR=`dirname $0`/..
+chef-solo -j $CHEFDIR/node.json -c $CHEFDIR/solo.rb
