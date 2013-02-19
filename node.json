@@ -9,6 +9,7 @@
     "gitx",
     "1password",
     "macvim",
-    "unix-essentials"
+    "unix-essentials",
+    "vi-mode"
   ]
 }
