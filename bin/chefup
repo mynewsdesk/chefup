@@ -1,4 +1,13 @@
 #!/bin/bash
 
+if [[ $EUID -eq 0 ]]; then
+   echo "Please do not run this script as root" 1>&2
+   exit 1
+fi
+
 CHEFDIR=`dirname $0`/..
-chef-solo -j $CHEFDIR/node.json -c $CHEFDIR/solo.rb
+cd $CHEFDIR
+gem install --conservative bundler
+bundle install --quiet
+librarian-chef install --quiet
+sudo chef-solo -j $CHEFDIR/node.json -c $CHEFDIR/solo.rb

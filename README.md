@@ -11,19 +11,12 @@ Prerequisites
 Setup
 -----
 
-Git clone this repo
+Fetch this repo
 
     git clone https://github.com/janne/chefup.git
-    cd chefup
-
-Run librarian to install all cookbooks
-
-    librarian-chef install
-
-Run Bundler to install all gems
-
-    bundle install
+or
+    curl -L https://github.com/janne/chefup/tarball|tar xz
 
 And run chefup (probably you want an alias for this)
 
-    cd ~/chefup && sudo bin/chefup
+    cd ~/chefup && bin/chefup
