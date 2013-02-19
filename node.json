@@ -1,3 +1,12 @@
 {
-  "run_list": ["alfred", "java", "chrome", "dropbox", "1password", "macvim", "unix-essentials"]
+  "run_list": [
+    "alfred",
+    "java",
+    "chrome",
+    "dropbox",
+    "gitx",
+    "1password",
+    "macvim",
+    "unix-essentials"
+  ]
 }
