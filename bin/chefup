@@ -10,4 +10,4 @@ cd $CHEFDIR
 gem install --conservative bundler
 bundle install --quiet
 librarian-chef install --quiet
-sudo chef-solo -j $CHEFDIR/node.json -c $CHEFDIR/solo.rb
+chef-solo -j $CHEFDIR/node.json -c $CHEFDIR/solo.rb

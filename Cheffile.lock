@@ -4,15 +4,7 @@ SITE
     dmg (1.1.0)
     homebrew (1.3.2)
 
-GIT
-  remote: https://github.com/pivotal/pivotal_workstation
-  ref: master
-  sha: 110c5192a12ed648a341d54f21f679a5b0680832
-  specs:
-    pivotal_workstation (1.0.0)
-      dmg (>= 0.0.0)
-
 DEPENDENCIES
+  dmg (>= 0)
   homebrew (>= 0)
-  pivotal_workstation (>= 0)
 

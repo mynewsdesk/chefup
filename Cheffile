@@ -1,6 +1,4 @@
 site "http://community.opscode.com/api/v1"
-cookbook "pivotal_workstation",
-         :git => "https://github.com/pivotal/pivotal_workstation"
 cookbook "homebrew"
-
+cookbook "dmg"
 # vim: ft=ruby

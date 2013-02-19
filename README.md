@@ -3,6 +3,8 @@ Chefup
 
 Configure frequently-used tools for an OS X workstation with Chef.
 
+Everything is run in user mode, no sudo needed.
+
 Prerequisites
 -------------
 * An OS X installation
