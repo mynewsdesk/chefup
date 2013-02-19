@@ -25,7 +25,8 @@
     "git-pair",
     "dnsimple",
     "postgresql",
-    "chef-mynewsdesk"
+    "chef-mynewsdesk",
+    "pow"
   ]
 }
 // vim: ft=javascript
