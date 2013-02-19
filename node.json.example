@@ -1,6 +1,6 @@
 {
-  "email": "jan.andersson@gmail.com",
-  "name": "Jan Andersson",
+  "email": "your@email",
+  "name": "Your Name",
   "run_list": [
     "alfred",
     "java",
