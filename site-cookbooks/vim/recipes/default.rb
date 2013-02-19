@@ -2,20 +2,26 @@ include_recipe "homebrew"
 
 package "macvim"
 
-directory "#{ENV['HOME']}/vim/colors"
+directory "#{ENV['HOME']}/.vim/colors" do
+  recursive true
+end
 
-cookbook_file "/home/vagrant/.vimrc" do
+directory "#{ENV['HOME']}/.vim/bundle" do
+  recursive true
+end
+
+cookbook_file "#{ENV['HOME']}/.vimrc" do
   source "vimrc"
 end
 
-cookbook_file "/home/vagrant/.vim/colors/desert256.vim" do
+cookbook_file "#{ENV['HOME']}/.vim/colors/desert256.vim" do
   source "desert256.vim"
 end
 
 script "clone_vundle" do
   interpreter "bash"
   code <<-EOH
-    if [ ! -e /home/vagrant/.vim/bundle/vundle ]
+    if [ ! -e #{ENV['HOME']}/.vim/bundle/vundle ]
     then
       git clone https://github.com/gmarik/vundle.git /home/vagrant/.vim/bundle/vundle
     fi
