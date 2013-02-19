@@ -1,4 +1,4 @@
-export PATH="/usr/local/bin:~/bin:$PATH"
+export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
 export MANPATH="/usr/local/man:$MANPATH"
 export LC_CTYPE=sv_SE.UTF-8
 export EDITOR="vim"
