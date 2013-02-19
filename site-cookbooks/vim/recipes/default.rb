@@ -10,8 +10,10 @@ directory "#{ENV['HOME']}/.vim/bundle" do
   recursive true
 end
 
-cookbook_file "#{ENV['HOME']}/.vimrc" do
-  source "vimrc"
+%w[vimrc gvimrc].each do |file|
+  cookbook_file "#{ENV['HOME']}/.#{file}" do
+    source file
+  end
 end
 
 cookbook_file "#{ENV['HOME']}/.vim/colors/desert256.vim" do
