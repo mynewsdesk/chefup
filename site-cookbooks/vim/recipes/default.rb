@@ -25,7 +25,7 @@ script "clone_vundle" do
   code <<-EOH
     if [ ! -e #{ENV['HOME']}/.vim/bundle/vundle ]
     then
-      git clone https://github.com/gmarik/vundle.git /home/vagrant/.vim/bundle/vundle
+      git clone https://github.com/gmarik/vundle.git #{ENV['HOME']}/.vim/bundle/vundle
     fi
     exit 0
   EOH
