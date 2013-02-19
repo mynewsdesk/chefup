@@ -7,8 +7,8 @@
   standup = shortlog --since=yesterday
 
 [user]
-  email = <%= node["email"] %>
-  name = <%= node["name"] %>
+  email = <%= node["user"]["email"] %>
+  name = <%= node["user"]["name"] %>
 
 [push]
   default = current

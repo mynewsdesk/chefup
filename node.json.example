@@ -1,7 +1,10 @@
 {
-  "email": "your@email",
-  "name": "Your Name",
+  "user": {
+    "email": "your@email",
+    "name": "Your Name",
+  },
   "run_list": [
+    "rbenv",
     "vim",
     "vi-mode",
     "alfred",
@@ -15,3 +18,4 @@
     "chefup-bin"
   ]
 }
+// vim: ft=javascript
