@@ -1,0 +1,19 @@
+[alias]
+  co = checkout
+  ci = commit
+  st = status
+  pr = pull --rebase
+  graph = log --graph --oneline --decorate
+  standup = shortlog --since=yesterday
+
+[user]
+  email = <%= node["email"] %>
+  name = <%= node["name"] %>
+
+[push]
+  default = current
+
+[color]
+  diff = auto
+  status = auto
+  branch = auto
