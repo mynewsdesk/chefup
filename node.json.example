@@ -1,7 +1,7 @@
 {
   "user": {
     "email": "your@email",
-    "name": "Your Name",
+    "name": "Your Name"
   },
   "run_list": [
     "rbenv",
