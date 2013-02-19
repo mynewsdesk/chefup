@@ -1,6 +1,6 @@
 directory "#{ENV['HOME']}/Applications"
 
-unless File.exists?("#{ENV['HOME']}/Applications/1Password.app")
+unless File.exists?("#{ENV['HOME']}/Applications/1Password.app") || File.exists?("/Applications/1Password.app")
 
   remote_file "#{Chef::Config[:file_cache_path]}/1password.zip" do
     source "https://d13itkw33a7sus.cloudfront.net/dist/1P/mac/1Password-3.8.20.zip"
