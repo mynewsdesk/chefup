@@ -25,6 +25,6 @@ Copy and update any .example files
     cp .ruby-version.example .ruby-version
     cp node.json.example node.json
 
-And run chefup (possibly you want it in your PATH)
+And run chefup:
 
     cd ~/chefup && bin/chefup
