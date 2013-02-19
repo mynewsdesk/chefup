@@ -1,8 +1,8 @@
 include_recipe "homebrew"
 
-package "git"
-package "ack"
-package "watch"
+%w[git ack watch readline wget].each do |pkg|
+  package pkg
+end
 
 %w[bash_profile bashrc screenrc].each do |file|
   cookbook_file "#{ENV['HOME']}/.#{file}" do
