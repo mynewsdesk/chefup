@@ -1,6 +1,6 @@
 include_recipe "homebrew"
 
-%w[git ack watch readline wget].each do |pkg|
+%w[git ack watch readline wget libxml2].each do |pkg|
   package pkg
 end
 
