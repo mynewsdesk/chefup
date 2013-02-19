@@ -20,6 +20,6 @@ or
 
     curl -L https://github.com/janne/chefup/tarball|tar xz
 
-And run chefup (probably you want an alias for this)
+And run chefup (possibly you want it in your PATH)
 
     cd ~/chefup && bin/chefup
