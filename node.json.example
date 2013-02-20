@@ -1,7 +1,8 @@
 {
   "user": {
     "email": "your@email",
-    "name": "Your Name"
+    "name": "Your Name",
+    "dev_path": "/Users/you/dev"
   },
   "run_list": [
     "bash",
