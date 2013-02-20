@@ -15,7 +15,8 @@
     "spotify",
     "1password",
     "unix-essentials",
-    "chefup-bin"
+    "chefup-bin",
+    "git-pair"
   ]
 }
 // vim: ft=javascript

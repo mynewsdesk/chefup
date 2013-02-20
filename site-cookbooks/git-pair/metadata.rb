@@ -1,0 +1,6 @@
+maintainer        "Jan Andersson"
+maintainer_email  "jan.andersson@gmail.com"
+license           "MIT"
+description       "Install mynewsdesk-git-pair"
+version           "1.0.0"
+supports          "mac_os_x"
