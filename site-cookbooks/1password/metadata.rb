@@ -1,5 +1,5 @@
-maintainer        "Jan Andersson"
-maintainer_email  "jan.andersson@gmail.com"
+maintainer        "Mynewsdesk"
+maintainer_email  "dev@mynewsdesk.com"
 license           "MIT"
 description       "Install 1Password"
 version           "1.0.0"

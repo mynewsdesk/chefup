@@ -1,5 +1,5 @@
-maintainer        "Jan Andersson"
-maintainer_email  "jan.andersson@gmail.com"
+maintainer        "Mynewsdesk"
+maintainer_email  "dev@mynewsdesk.com"
 license           "MIT"
 description       "Install Spotify"
 version           "1.0.0"
