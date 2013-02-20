@@ -18,7 +18,8 @@
     "1password",
     "unix-essentials",
     "chefup-bin",
-    "git-pair"
+    "git-pair",
+    "dnsimple"
   ]
 }
 // vim: ft=javascript
