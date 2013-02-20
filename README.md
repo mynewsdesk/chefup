@@ -21,9 +21,8 @@ or
 
     curl -L https://github.com/janne/chefup/tarball|tar xz
 
-Copy and update any .example files
+Copy and update node.json example
 
-    cp .ruby-version.example .ruby-version
     cp node.json.example node.json
 
 And run chefup:

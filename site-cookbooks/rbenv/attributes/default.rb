@@ -1,1 +1,1 @@
-default[:rbenv][:version] = `cat .rbenv-version`.strip
+node.default['rbenv']['version'] = '1.9.3-p374'

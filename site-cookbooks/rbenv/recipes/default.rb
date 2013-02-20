@@ -7,11 +7,10 @@ cookbook_file "#{ENV['HOME']}/.rc.d/rbenv.sh" do
   source "rbenv.sh"
 end
 
-script "install #{node[:rbenv][:version]}" do
-  interpreter "bash"
-  code <<-EOH
-    rbenv install #{node[:rbenv][:version]}
-    rbenv global #{node[:rbenv][:version]}
-    exit 0
-  EOH
+execute "rbenv install #{node['rbenv']['version']}" do
+  returns [0,1]
 end
+
+execute "rbenv rehash"
+
+execute "rbenv global #{node['rbenv']['version']}"
