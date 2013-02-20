@@ -7,7 +7,8 @@ Everything is run in user mode, no sudo needed.
 
 Prerequisites
 -------------
-* An OS X installation
+* Install the lastest OS X
+* Install XCode from App Store
 
 Setup
 -----
