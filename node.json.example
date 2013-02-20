@@ -19,7 +19,8 @@
     "unix-essentials",
     "chefup-bin",
     "git-pair",
-    "dnsimple"
+    "dnsimple",
+    "postgresql"
   ]
 }
 // vim: ft=javascript
