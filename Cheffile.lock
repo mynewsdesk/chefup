@@ -4,7 +4,15 @@ SITE
     dmg (1.1.0)
     homebrew (1.3.2)
 
+GIT
+  remote: git@github.com:mynewsdesk/chef-mynewsdesk.git
+  ref: master
+  sha: dba2b5cc3549c362d07e97ba47c10e6c5e335c52
+  specs:
+    chef-mynewsdesk (1.0.0)
+
 DEPENDENCIES
+  chef-mynewsdesk (>= 0)
   dmg (>= 0)
   homebrew (>= 0)
 

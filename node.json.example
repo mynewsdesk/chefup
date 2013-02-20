@@ -21,7 +21,8 @@
     "chefup-bin",
     "git-pair",
     "dnsimple",
-    "postgresql"
+    "postgresql",
+    "chef-mynewsdesk"
   ]
 }
 // vim: ft=javascript
