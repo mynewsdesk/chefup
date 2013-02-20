@@ -3,7 +3,7 @@ include_recipe "homebrew"
 package "rbenv"
 package "ruby-build"
 
-cookbook_file "#{ENV['HOME']}/.bashrc.d/rbenv.sh" do
+cookbook_file "#{ENV['HOME']}/.rc.d/rbenv.sh" do
   source "rbenv.sh"
 end
 

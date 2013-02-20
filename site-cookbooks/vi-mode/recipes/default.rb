@@ -1,6 +1,6 @@
-directory "#{ENV['HOME']}/.bashrc.d"
+directory "#{ENV['HOME']}/.rc.d"
 
-cookbook_file "#{ENV['HOME']}/.bashrc.d/vi-mode.sh" do
+cookbook_file "#{ENV['HOME']}/.rc.d/vi-mode.sh" do
   source "vi-mode.sh"
 end
 

@@ -18,10 +18,10 @@ then
   done
 fi
 
-if [ -e ~/.bashrc.d ]
+if [ -e ~/.rc.d ]
 then
-  for c in `ls ~/.bashrc.d`
+  for c in `ls ~/.rc.d`
   do
-    source ~/.bashrc.d/$c
+    source ~/.rc.d/$c
   done
 fi
