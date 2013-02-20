@@ -2,15 +2,23 @@ export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
 export MANPATH="/usr/local/man:$MANPATH"
 export LC_CTYPE=sv_SE.UTF-8
 export EDITOR="vim"
+export CLICOLOR=1
+export LSCOLORS=gxfxcxdxbxegedabagacad
+export TERM=xterm-256color
+export LESS="-R -F -X"
 
-if [ -x /usr/bin/dircolors ]; then
-  test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-  alias ls='ls --color=auto'
-fi
+alias b='bundle exec'
+alias testbot='bundle exec rake testbot:rspec 2>&1 | tee tmp/output.txt | grep "^\(Finished.*\.$\|rspec\|\d\+ examples\)"'
 
 function parse_git_branch {
   BRANCH=$(git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/\1/")
-  [[ $BRANCH ]] && echo "[$BRANCH]"
+  if [ -z $GIT_AUTHOR_EMAIL ]; then
+    USER=$(git config --get user.email)
+  else
+    USER=$GIT_AUTHOR_EMAIL
+  fi
+  USER=${USER%%@*}
+  [[ $BRANCH ]] && echo "[$USER@$BRANCH]"
 }
 if [[ -n $SSH_CONNECTION ]]; then
   PS1="\h:\w\$(parse_git_branch)\$ "
