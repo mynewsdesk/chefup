@@ -4,6 +4,8 @@
     "name": "Your Name"
   },
   "run_list": [
+    "bash",
+    "git",
     "rbenv",
     "vim",
     "vi-mode",
