@@ -5,6 +5,7 @@ package "git"
 template "#{ENV['HOME']}/.gitconfig" do
   source "gitconfig.erb"
   mode 00644
+  action :create_if_missing
 end
 
 directory "#{ENV['HOME']}/.rc.d"
