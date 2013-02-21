@@ -7,7 +7,16 @@ fi
 
 CHEFDIR=`dirname $0`/..
 cd $CHEFDIR
-gem install --conservative bundler
-bundle install --quiet
-librarian-chef install --quiet
-chef-solo -j $CHEFDIR/node.json -c $CHEFDIR/solo.rb
+
+TIMESTAMP=/tmp/chef_timestamp
+if [[ ! -e $TIMESTAMP || `cat $TIMESTAMP` -ne `date +%Y-%m-%d` ]]
+then
+  echo "Installing prerequisites"
+  gem install --conservative bundler
+  bundle install
+  librarian-chef install
+  date +%Y-%m-%d > $TIMESTAMP
+fi
+
+if [[ $1 ]]; then RUNLIST="-o $1"; fi
+chef-solo -j $CHEFDIR/node.json -c $CHEFDIR/solo.rb $RUNLIST
