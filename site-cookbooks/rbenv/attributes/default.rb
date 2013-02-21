@@ -1,1 +1,1 @@
-node.default['rbenv']['version'] = '1.9.3-p374'
+default.rbenv.version = '1.9.3-p374'

@@ -4,9 +4,6 @@
     "name": "Your Name",
     "dev_path": "/Users/you/dev"
   },
-  "rbenv": {
-    "version": "1.9.3-p374"
-  },
   "run_list": [
     "1password.app",
     "alfred.app",

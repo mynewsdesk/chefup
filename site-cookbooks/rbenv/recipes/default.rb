@@ -8,10 +8,10 @@ cookbook_file "#{ENV['HOME']}/.rc.d/rbenv.sh" do
   mode 00644
 end
 
-execute "rbenv install #{node['rbenv']['version']}" do
+execute "rbenv install #{node.rbenv.version}" do
   returns [0,1]
 end
 
 execute "rbenv rehash"
 
-execute "rbenv global #{node['rbenv']['version']}"
+execute "rbenv global #{node.rbenv.version}"
