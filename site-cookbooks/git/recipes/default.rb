@@ -4,6 +4,7 @@ package "git"
 
 template "#{ENV['HOME']}/.gitconfig" do
   source "gitconfig.erb"
+  mode 00644
 end
 
 directory "#{ENV['HOME']}/.rc.d"

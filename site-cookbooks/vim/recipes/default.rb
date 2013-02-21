@@ -13,11 +13,13 @@ end
 %w[vimrc gvimrc].each do |file|
   cookbook_file "#{ENV['HOME']}/.#{file}" do
     source file
+    mode 00644
   end
 end
 
 cookbook_file "#{ENV['HOME']}/.vim/colors/desert256.vim" do
   source "desert256.vim"
+  mode 00644
 end
 
 script "clone_vundle" do

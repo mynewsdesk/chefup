@@ -6,4 +6,5 @@ end
 
 cookbook_file "#{ENV['HOME']}/.screenrc" do
   source "screenrc"
+  mode 00644
 end
