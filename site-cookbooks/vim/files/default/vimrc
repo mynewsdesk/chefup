@@ -61,6 +61,10 @@ autocmd BufRead,BufNewFile *.go set filetype=go
 match ErrorMsg /\s\+\%#\@<!$\|\t\+/
 autocmd InsertLeave * redraw!
 
+" Go stuff
+autocmd FileType go match ErrorMsg //
+autocmd FileType go set noexpandtab
+
 " REST OF FILE CONTAINS MAPPINGS
 let mapleader = " "
 
