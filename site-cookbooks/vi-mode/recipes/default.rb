@@ -1,4 +1,6 @@
-directory "#{ENV['HOME']}/.rc.d"
+directory "#{ENV['HOME']}/.rc.d" do
+  mode 00755
+end
 
 cookbook_file "#{ENV['HOME']}/.rc.d/vi-mode.sh" do
   source "vi-mode.sh"

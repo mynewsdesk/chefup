@@ -1,4 +1,6 @@
-directory "#{ENV['HOME']}/Applications"
+directory "#{ENV['HOME']}/Applications" do
+  mode 00755
+end
 
 unless File.exists?("#{ENV['HOME']}/Applications/1Password.app") || File.exists?("/Applications/1Password.app")
 

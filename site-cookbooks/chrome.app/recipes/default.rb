@@ -1,4 +1,6 @@
-directory "#{ENV['HOME']}/Applications"
+directory "#{ENV['HOME']}/Applications" do
+  mode 00755
+end
 
 dmg_package "Google Chrome" do
   dmg_name "googlechrome"

@@ -1,5 +1,7 @@
 return unless node["platform"] == "mac_os_x"
-directory "#{ENV['HOME']}/Applications"
+directory "#{ENV['HOME']}/Applications" do
+  mode 00755
+end
 
 dmg_package "JavaForOSX" do
   source "http://support.apple.com/downloads/DL1572/en_US/"

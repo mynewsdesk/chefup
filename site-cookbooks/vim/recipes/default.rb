@@ -4,10 +4,12 @@ package "macvim"
 
 directory "#{ENV['HOME']}/.vim/colors" do
   recursive true
+  mode 00755
 end
 
 directory "#{ENV['HOME']}/.vim/bundle" do
   recursive true
+  mode 00755
 end
 
 %w[vimrc gvimrc].each do |file|

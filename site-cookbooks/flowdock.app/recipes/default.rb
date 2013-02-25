@@ -1,4 +1,6 @@
-directory "#{ENV['HOME']}/Applications"
+directory "#{ENV['HOME']}/Applications" do
+  mode 00755
+end
 
 unless File.exists?("#{ENV['HOME']}/Applications/Flowdock.app") || File.exists?("/Applications/Flowdock.app")
 
