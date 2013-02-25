@@ -23,7 +23,8 @@
     "dnsimple",
     "postgresql",
     "chef-mynewsdesk",
-    "pow"
+    "pow",
+    "heroku-toolbelt"
   ]
 }
 // vim: ft=javascript
