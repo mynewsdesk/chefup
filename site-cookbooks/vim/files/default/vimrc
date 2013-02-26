@@ -41,6 +41,7 @@ Bundle 'tpope/vim-surround'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'jnwhiteh/vim-golang'
 Bundle 'kchmck/vim-coffee-script'
+Bundle 'epmatsw/ag.vim'
 
 set wildignore+=*~,*#,public/assets/**
 
