@@ -24,6 +24,12 @@ cookbook_file "#{ENV['HOME']}/.vim/colors/desert256.vim" do
   mode 00644
 end
 
+cookbook_file "#{ENV['HOME']}/.rc.d/vim.sh" do
+  source "vim.sh"
+  mode 00644
+end
+
+
 script "clone_vundle" do
   interpreter "bash"
   code <<-EOH
