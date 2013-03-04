@@ -1,0 +1,7 @@
+site "http://community.opscode.com/api/v1"
+cookbook "homebrew"
+cookbook "dmg"
+# Uncomment the following file if you have access to the private mynewsdesk repo
+# cookbook "chef-mynewsdesk", :git => "git@github.com:mynewsdesk/chef-mynewsdesk.git"
+
+# vim: ft=ruby

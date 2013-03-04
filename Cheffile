@@ -1,5 +1,0 @@
-site "http://community.opscode.com/api/v1"
-cookbook "homebrew"
-cookbook "dmg"
-cookbook "chef-mynewsdesk", :git => "git@github.com:mynewsdesk/chef-mynewsdesk.git"
-# vim: ft=ruby

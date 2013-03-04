@@ -21,9 +21,10 @@ or
 
     curl -L https://github.com/mynewsdesk/chefup/tarball|tar xz
 
-Copy and update node.json example
+Copy and update the example files
 
     cp node.json.example node.json
+    cp Cheffile.example Cheffile
 
 And run chefup:
 
