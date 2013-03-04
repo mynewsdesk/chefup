@@ -15,11 +15,11 @@ Setup
 
 Fetch this repo
 
-    git clone https://github.com/janne/chefup.git
+    git clone https://github.com/mynewsdesk/chefup.git
 
 or
 
-    curl -L https://github.com/janne/chefup/tarball|tar xz
+    curl -L https://github.com/mynewsdesk/chefup/tarball|tar xz
 
 Copy and update node.json example
 
